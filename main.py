@@ -1,4 +1,5 @@
 import bibtext
+from statistics import all_references_age
 
 
 def main():
@@ -15,6 +16,8 @@ def main():
                 print(entry)
                 bibtex_file.write(entry + '\n')
         print(f'Number of entries: {number_of_entries}')
+
+    print(f'90% >= {all_references_age(r'C:\Users\T.Mukhin\OneDrive - Universite de Liege\APPLICATIVES\sample\bibrary.bib', 0.08)}')
 
 if __name__ == '__main__':
     main()
