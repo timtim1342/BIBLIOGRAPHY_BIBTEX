@@ -40,7 +40,7 @@ def target_file_crawler(working_folder: str = '.') -> Iterator[str]:
                   'Southeast Asia & Oceania',
                   'Australia & New Guinea',
                   'Eurasia')
-
+    print(os.path.abspath(working_folder))
     for path, directories, files in os.walk(working_folder):
         if any(macroarea in path for macroarea in macroareas):
             for file in files:

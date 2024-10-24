@@ -2,11 +2,11 @@ import bibtext
 
 
 def main():
-    #path = r'C:\Users\T.Mukhin\OneDrive - Universite de Liege\APPLICATIVES\sample'
-    path = 'data'
+    path = r'C:\Users\T.Mukhin\OneDrive - Universite de Liege\APPLICATIVES\sample'
+    #path = '.'
     number_of_entries = 0
 
-    with open('bibrary.bib', 'w', encoding='utf-8') as bibtex_file:
+    with open(r'C:\Users\T.Mukhin\OneDrive - Universite de Liege\APPLICATIVES\sample\bibrary.bib', 'w', encoding='utf-8') as bibtex_file:
 
         for path in bibtext.target_file_crawler(path):
             #print(path)
